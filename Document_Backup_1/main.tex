@@ -1,0 +1,84 @@
+\documentclass[english, report, 12pt]{reyesThesis}
+
+\usepackage[numbib, nottoc]{tocbibind}
+%Mios:
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{chngcntr}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{graphics,graphicx,xcolor}
+\usepackage{amsmath, mathtools}
+
+\definecolor{mygreen}{RGB}{0,128,0} % Verde oscuro
+\definecolor{myblue}{RGB}{0,0,128} % Azul oscuro
+\definecolor{myred}{RGB}{128,0,0} % Rojo oscuro
+
+%Ajustes extra:
+\counterwithout{table}{chapter}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+
+% Redefinir el comando \thetable para que aparezca en negrita
+\makeatletter
+\renewcommand{\thetable}{\textbf{\arabic{table}}}
+\renewcommand{\fnum@table}{ \textcolor{UVred}{\textbf{Table~\thetable}}}
+\makeatother
+
+
+
+\DeclareUnicodeCharacter{0301}{\'}
+%\DeclareUnicodeCharacter{B4}{\'}
+%\DeclareUnicodeCharacter{03B8}{FIX ME!!!!}
+
+
+\usepackage[style=phys, eprint=true, maxnames=50]{biblatex}%<- specify style
+\addbibresource{biblio.bib}%<- specify bib file
+
+\author{Carlos Andrés Rodallega Millán}
+\title{Análisis de la superfluidez de bosones de espín 1 en presencia de un campo de Zeeman mediante la técnica de \phantom{'} bosonización\phantom{'} }
+\titleen{Analysis of the superfluidity of a lattice system of spin-1 bosons in the presence of an external Zeeman field using the bosonization technique}
+\degree{Físico}
+\supervisor{Karem Rodríguez Ramírez}   
+\institution{Universidad del Valle}
+\faculty{Facultad de Ciencias Naturales y Exactas}
+\department{Departamento de Física}
+\submitdate{2024}
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\include{titlepage}
+\include{frontmatter}
+
+\pagenumbering{arabic}
+
+%\include{Chapters/Chapter_1}
+%\include{Chapters/Chapter_2}
+\include{Chapters/Chapter_3}
+%\include{Chapters/Chapter_4}
+%\include{Chapters/Chapter_5}
+
+
+\begin{appendices}
+\include{Appendix/App_A}
+%\include{Appendix/App_B}
+%\include{Appendix/App_C}
+%\include{Appendix/App_D}
+%\include{Appendix/App_E}
+%\include{Appendix/App_G}
+%\include{Appendix/App_H}
+%\include{Appendix/App_I}
+%\include{Appendix/App_J}
+\end{appendices}
+
+
+%\printbibliography
+
+
+
+
+\end{document}
+

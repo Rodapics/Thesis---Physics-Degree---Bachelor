@@ -1,0 +1,312 @@
+\chapter{More About Bosonization adn Conmmutations.}
+\begin{align}
+    \hat{b}_{\sigma}^{\dagger} (x) \approx \sqrt{\bar{\rho_{0}}} \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{0} \sqrt{k}} \right) e^{i \sqrt{k} \hat{\theta_{\sigma}}}\\
+    \hat{b}_{\sigma}^{} (x) \approx \sqrt{\bar{\rho_{0}}} e^{-i \sqrt{k} \hat{\theta_{\sigma}}} \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{0} \sqrt{k}} \right)
+\end{align}
+conmutadores:
+
+\begin{align}
+    \left[ e^{-i \sqrt{k} \hat{\theta_{\sigma^\prime}}} , \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{0} \sqrt{k}} \right)\right]= \frac{1}{2\bar{\rho}_0} e^{-i \sqrt{k}} \delta_{\sigma, \sigma ^ \prime} 
+\end{align}
+
+
+\section{Full Bosonization}
+Hamiltonian:
+
+\begin{equation}
+    \hat{H}=\overbrace{-t \sum_{\langle i, j\rangle, \sigma}\left(\hat{b}_{i, \sigma}^{\dagger} \hat{b}_{j, \sigma}+\text { h.c. }\right)}^{\text {Hopping}} \underbrace{+\hat{H}_I}_{\text {Interaction}} \overbrace{-\mu \sum_i \hat{n}_{i, \sigma}}^{\text {Chemical Potential }}+\overbrace{q \sum_{i, \sigma} \sigma \hat{n}_{i, \sigma}}^{\text {Zeeman Field}} \text{,}
+\end{equation}
+
+Con el termino de interacción de la siguiente manera:
+\footnotesize 
+\begin{align}
+    \hat{H}_{I} = &\sum_i \Bigg[ \underbrace{\frac{g_2}{2} \left( \hat{b}_{1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{1}^{} \hat{b}_{1}^{} 
+    + \hat{b}_{-1}^{\dagger}\hat{b}_{-1}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{-1}^{} 
+    + 2\hat{b}_{1}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{0}^{}  
+    + 2\hat{b}_{-1}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{0}^{} \right) 
+    + \frac{2g_{2} + g_{0}}{6} \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{}+\frac{g_{2} + 2g_{0}}{3} + 2\hat{b}_{1}^{\dagger}\hat{b}_{-1}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{1}^{} }_{\text {Spin Preserving Collision (SPC)}}  \nonumber \\
+ +&\underbrace{\frac{g_{2}-g_{0}}{3} \left( \hat{b}_{-1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{} + \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{-1}^{}\right)}_{\text {Spin Changing Collision (SCC)}} 
+    \Bigg]_{i}.
+\end{align}
+\normalsize
+Trabajando solo la parte del spin preserving collision y la parte del spin changing de manera idenpendiente:
+
+\begin{align}
+\hat{H}_{SPC} &= \sum_i \Bigg[ \frac{g_2}{2}\left(\underbrace{\hat{b}_{1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{1}^{} \hat{b}_{1}^{} }_{\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma}^{}}     +\underbrace{\hat{b}_{-1}^{\dagger}\hat{b}_{-1}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{-1}^{} }_{\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma}^{}} + 2\underbrace{\hat{b}_{1}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{0}^{} }_{\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma^\prime}^{}}+ 2\underbrace{\hat{b}_{-1}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{0}^{} }_{\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma^\prime}^{}} \right) \nonumber \\
+    & + \frac{2g_{2} + g_{0}}{6} 
+    \underbrace{\hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{} }_{\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma}^{}}
+    +\frac{g_{2} + 2g_{0}}{3} + 
+    2\underbrace{\hat{b}_{1}^{\dagger}\hat{b}_{-1}^{\dagger} \hat{b}_{1}^{} \hat{b}_{-1}^{} }_{\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma^\prime}^{}}
+     \Bigg ]_i \nonumber
+\end{align}
+
+
+\begin{equation}
+\hat{H}_{SCC}= \sum_i \Bigg [_i
+\frac{g_{2}-g_{0}}{3} \left( 
+\underbrace{\hat{b}_{-1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{} }_{\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^{\prime}}^{\dagger} \hat{b}_{\sigma^{ \prime \prime}}^{} \hat{b}_{\sigma^{\prime \prime}}^{}} + 
+\underbrace{\hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{-1}^{} }_{\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma^{\prime}}^{} \hat{b}_{\sigma^{\prime \prime}}^{}}
+\right) \Bigg ]_i
+\end{equation}
+Así vemos que solo debemos bosonizar los teerminos de la forma:
+
+\begin{align}                       \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma}^{} |_{\sigma = 1,0,-1}& &  \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma^\prime}^{} & & \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma^{\prime \prime}}^{} \hat{b}_{\sigma^{\prime \prime}}^{} &  & \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma^\prime}^{} \hat{b}_{\sigma^{\prime \prime}}^{} &
+\end{align}
+Aplicando la siguiente identidad de bosonización:
+
+\begin{align*}
+ \textcolor{mygreen}{\hat{b}_{\sigma}^{} (x) = e^{-i \sqrt{k} \hat{\theta_{\sigma}}} \sqrt{ \bar{\rho}_{\sigma} + \frac{\partial_{x} \hat{\Phi}_{\sigma}}{\sqrt{k}}} } 
+ & &   \textcolor{myblue}{\hat{b}_{\sigma^{\prime}}^{} (x) = e^{-i \sqrt{k} \hat{\theta_{\sigma^{\prime}}}} \sqrt{ \bar{\rho}_{\sigma^{\prime}} + \frac{\partial_{x} \hat{\Phi}_{\sigma^{\prime}}}{\sqrt{k}}} } \quad & &  \textcolor{myred}{\hat{b}_{\sigma^{\prime \prime}}^{} (x) = e^{-i \sqrt{k} \hat{\theta_{\sigma^{\prime \prime}}}} \sqrt{ \bar{\rho}_{\sigma^{\prime \prime}} + \frac{\partial_{x} \hat{\Phi}_{\sigma^{\prime \prime}}}{\sqrt{k}}} }  & 
+\end{align*}
+Llevando a los siguientes resultados:
+
+
+\begin{equation}    \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma}^{} = \bar{\rho}_{\sigma}^{2} - \bar{\rho}_{\sigma} +\left( 2\bar{\rho}_{\sigma} - \frac{3}{2}\right) \frac{\partial_{x} \hat{\Phi}_{\sigma}}{\sqrt{k}} + \frac{3}{2} \frac{(\partial_ {x}\hat{\Phi}_{\sigma})^2}{k}
+\end{equation}
+
+%\frac{\hat{\Phi}_{\sigma}}{\sqrt{k}}
+%\bar{\rho}_{\sigma}
+%\frac{(\partial_ x\\hat{Phi}_{\sigma^{}})^2}{k}
+% \bar{\rho}_{\sigma^{\prime}}
+\begin{equation}   \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma^\prime}^{}  = \bar{\rho}_{\sigma} \bar{\rho}_{\sigma^{\prime}} + \bar{\rho}_{\sigma}  \frac{\partial_{x} \hat{\Phi}_{\sigma}^{\prime}}{\sqrt{k}}
+   + \bar{\rho}_{\sigma} \frac{(\partial_{x} \hat{\Phi}_{\sigma^{\prime}})^2}{4\bar{\rho}_{\sigma^{\prime}} k}
+    + \bar{\rho}_{\sigma^{\prime}}  \frac{\partial_{x} \hat{\Phi}_{\sigma}^{}}{\sqrt{k}}
+   + \bar{\rho}_{\sigma^{\prime}} \frac{(\partial_{x} \hat{\Phi}_{\sigma^{}})^2}{4\bar{\rho}_{\sigma^{}} k}
+   + \frac{\partial_{x}\hat{\Phi}_{\sigma^{}} \partial_{x}\hat{\Phi}_{\sigma^{\prime}}}{k}
+\end{equation}
+
+\scriptsize
+\begin{align}
+\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma^{\prime \prime}}^{} \hat{b}_{\sigma^{\prime \prime}}^{}  =  e^{\sqrt{k}\hat{\theta}_{q}} \Big[  c \frac{(\partial_ x\hat{\Phi}_{0})^2}{2k} + \beta^{ \prime \prime} + \frac{\partial_x \hat{\Phi}_{0}}{\sqrt{k}} \left(\frac{1}{2}  \sqrt{\frac{\bar{\rho}_{1}}{\bar{\rho}_{-1}}} + \frac{1}{2} \sqrt{\frac{\bar{\rho}_{-1}}{\bar{\rho}_{1}}} + \sqrt{\bar{\rho}_{-1} \bar{\rho}_1} -c\right) & \nonumber \\
+ + \frac{\partial_x \hat{\Phi}_{0}\partial_{x} \hat{\Phi}_{1} }{k} \left(\frac{1}{2} \sqrt{\frac{\bar{\rho}_{-1}}{\bar{\rho}_{1}}} \right)
+ + \frac{\partial_x \hat{\Phi}_{0}\partial_{x} \hat{\Phi}_{-1} }{k} \left(\frac{1}{2} \sqrt{\frac{\bar{\rho}_{1}}{\bar{\rho}_{-1}}} \right) +\frac{\partial_x \hat{\Phi}_{-1}}{\sqrt{k}} \left(\frac{1}{4} \sqrt{\frac{\bar{\rho}_{0}^{2}}{\bar{\rho}_{1}\bar{\rho}_{-1}}}  + \frac{\bar{\rho}_{0}}{2}  \sqrt{\frac{\bar{\rho}_{1}}{\bar{\rho}_{-1}}} - \frac{1}{4} \sqrt{\frac{\bar{\rho}_{1}}{\bar{\rho}_{-1}}} \right) \nonumber\\ 
++\frac{\partial_x \hat{\Phi}_{1}}{\sqrt{k}} \left(\frac{1}{4} \sqrt{\frac{\bar{\rho}_{0}^{2}}{\bar{\rho}_{-1}\bar{\rho}_{1}}}  + \frac{\bar{\rho}_{0}}{2}  \sqrt{\frac{\bar{\rho}_{-1}}{\bar{\rho}_{1}}} - \frac{1}{4} \sqrt{\frac{\bar{\rho}_{-1}}{\bar{\rho}_{1}}} \right)   +\frac{\partial_x \hat{\Phi}_{-1} \partial_x \hat{\Phi}_{1}}{k}\left(\frac{1}{4} \sqrt{\frac{\bar{\rho}^2}{\bar{\rho}_{1} \bar{\rho}_{1}}} \right) \Big]\nonumber &  
+\end{align}
+
+
+
+\scriptsize
+\begin{align}
+\hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma^\prime}^{} \hat{b}_{\sigma^{\prime \prime}}^{} = & e^{-\sqrt{k}\hat{\theta}_{q}} \Big[  c \frac{(\partial_ x\hat{\Phi}_{0})^2}{2k} + \beta^{ \prime} \nonumber \\
+\frac{\partial_x \hat{\Phi}_{0}}{\sqrt{k}} \left( \frac{3c}{2} + \sqrt{\bar{\rho}_{-1} \bar{\rho}_1}\right) + \frac{\partial_x \hat{\Phi}_{0}\partial_{x} \hat{\Phi}_{-1} }{k} \left( \frac{3c}{4 \bar{\rho}_{-1}} + \frac{\sqrt{\bar{\rho}_{1}\bar{\rho}_{-1}}}{2\bar{\rho}_{-1}} \right) &  + \frac{\partial_x \hat{\Phi}_{0}\partial_{x} \hat{\Phi}_{1} }{k} \left( \frac{3c}{4 \bar{\rho}_{1}} + \frac{\sqrt{\bar{\rho}_{1}\bar{\rho}_{-1}}}{2\bar{\rho}_{1}} \right)\\ 
+ \left(\frac{\partial_x \hat{\Phi}_{-1}}{2 \bar{\rho}_{-1} \sqrt{k}}\right)\left(\sqrt{\frac{\bar{\rho}_1 \bar{\rho}_{-1}}{4 \bar{\rho}_0^2}}+\sqrt{\bar{\rho}_{-1} \bar{\rho}_1}+\frac{\sqrt{\bar{\rho}_{-1} \bar{\rho}_1}}{2}+\bar{\rho}_0 \sqrt{\bar{\rho}_{-1} \bar{\rho}_1}\right)&    +\frac{\partial_x \hat{\Phi}_{-1} \partial_x \hat{\Phi}_{1}}{k}\left(\frac{1}{8 \bar{\rho}_0} \sqrt{\frac{1}{\bar{\rho}_1 \bar{\rho}_{-1}}}+\frac{1}{4} \sqrt{\frac{1}{\bar{\rho}_1 \rho_{-1}}}+\frac{1}{8} \sqrt{\frac{1}{\bar{\rho}_{-1} \bar{\rho}_1}}+\frac{\bar{\rho}_0}{4} \sqrt{\frac{1}{\bar{\rho}_{-1} \bar{\rho}_1}}\right) \nonumber \\ 
+ +  \left(\frac{\partial_x \hat{\Phi}_1}{2 \bar{\rho}_1 \sqrt{k}}\right)\left(\sqrt{\frac{\bar{\rho}_1 \bar{\rho}_{-1}}{4 \bar{\rho}_0^2}}+\sqrt{\bar{\rho}_{-1} \bar{\rho}_1}+\frac{\sqrt{\bar{\rho}_{-1} \bar{\rho}_1}}{2}+\bar{\rho}_0 \sqrt{\bar{\rho}_{-1} \bar{\rho}_1}\right) \Big] &
+\end{align}
+
+\normalsize
+Ahora, es importante analizar la siguiente suma de terminos
+
+\begin{align}
+    \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma^\prime}^{} \hat{b}_{\sigma^{\prime \prime}}^{} + \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma^\prime}^{} = \overbrace{\left( e^{i\sqrt{k}\hat{\theta}_{q}} + e^{-i\sqrt{k}\hat{\theta}_{q}} \right)}^{2\cos{\sqrt{k}\hat{\theta}_{q}}} \Big[  \Big] \\
+    sadasd\\
+    sasda\\
+    +\underbrace{\left( e^{i\sqrt{k}\hat{\theta}_{q}} + e^{-i\sqrt{k}\hat{\theta}_{q}} \right)}_{\cos{\sqrt{k}\hat{\theta}_{q}} + i\sin{\sqrt{k}\hat{\theta}_{q}}} \\ 
+\end{align}
+
+\begin{align}
+    \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma}^{\dagger} \hat{b}_{\sigma^\prime}^{} \hat{b}_{\sigma^{\prime \prime}}^{} + \hat{b}_{\sigma}^{\dagger}\hat{b}_{\sigma^\prime}^{\dagger} \hat{b}_{\sigma}^{} \hat{b}_{\sigma^\prime}^{} = \left( 2\cos{\sqrt{k}\hat{\theta}_{q}} \right) \\
+    sadasd\\
+    sasda\\
+    sadasd \\ 
+\end{align}
+
+Es importante notar que trabajamos con la condición de que el coseno se "hunda".
+Después de realizar toda el Algebra posible, recobramos esta matriz:
+
+\begin{equation}
+    \hat{H}_{I} = \int dx \left( \frac{1}{k} \partial_{x} \vec{\hat{\Phi}}_{\hat{S}_{z}}^{\dagger}  (\mathbb{M}) \partial_{x} \vec{\hat{\Phi}}_{\hat{S}_{z}} \right) + \text{linear terms}
+\end{equation}
+donde:
+
+\begin{equation}
+    \mathbb{M} = \begin{pmatrix}
+        \frac{g_2(9+4\beta^2) +2g_0\beta^2 }{12} & \frac{g_2(3-\beta) + g_0}{6} & \frac{g_2(2-\frac{1}{\gamma}) + g_0 (4 + \frac{1}{\gamma})}{12}  \\
+        \frac{g_2(3-\beta) + g_0}{6} & \frac{g_2(6-2\gamma +3\eta) + g_0(2\gamma +3)}{12} & \frac{g_2(3-\alpha) + g_0}{6} \\
+        \frac{g_2(2-\frac{1}{\gamma}) + g_0 (4 + \frac{1}{\gamma})}{12} & \frac{g_2(3-\alpha) + g_0}{6} &   \frac{g_2(9+4\alpha^2) +2g_0\alpha^2 }{12}
+            \end{pmatrix}
+\end{equation}
+con las siguientes definiciones:
+\begin{align*}
+    \alpha &= \sqrt{\frac{\bar{\rho}_1}{\bar{\rho}_{-1}}} \\
+    \beta &=  \sqrt{\frac{\bar{\rho}_{-1}}{\bar{\rho}_1}} \\
+    \gamma &= \sqrt{\frac{\bar{\rho}_1 \bar{\rho}_{-1}}{\bar{\rho}_0^2}} \\
+    \eta &= \frac{\bar{\rho}_0}{\bar{\rho}_1} + \frac{\bar{\rho}_0}{\bar{\rho}_{-1}} \\
+\end{align*}
+Lo interesante aquí, es que cuando nos encontramos en el siguiente caso:
+\begin{equation}
+    \bar{\rho}_{-1} = \bar{\rho}_{1} = \bar{\rho}_{0}
+\end{equation}
+El termino linea se convierte en:
+
+\begin{equation}
+    \hat{H}_{I} = \int dx \left( \frac{1}{K} \partial_{x}\hat{\vec{\Phi}}_{\sigma}^\top
+                    \begin{pmatrix}
+                    \frac{13 g_2 + 2 g_0}{12} & \frac{2g_2 + g_0}{6} & \frac{g_2+5g_0}{12} \\
+                    \frac{2g_2 + g_0}{6} & \frac{10g_2 + 5 g_0}{12} & \frac{2g_2 + g_0}{6} \\
+                    \frac{g_2+5g_0}{12}& \frac{2g_2 + g_0}{6}& \frac{13 g_2 + 2 g_0}{12} 
+            \end{pmatrix}  \partial_{x}\hat{\vec{\Phi}}_\sigma  \right)
+\end{equation}
+Donde desaparecen todos lo terminos lineales y solo se encuentran en el sitema las contribuciones cuadráticas.
+
+\newpage
+
+Ahora, recompilando la información, reemplazando la información obtenida y pasando de un sistema discreto al continuo obtenemos :
+
+%Actualizar, Colocar este como el resultado.
+
+\begin{equation*} %Actualizar, Colocar este como el resultado.
+    \hat{H}_{SCC} = \frac{g_{2}-g_{0}}{3} \left( \hat{b}_{-1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{} + \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{-1}^{} \right) = \int dx \frac{g_{2}-g_{0}}{3}\Bigg[
+    \overbrace{\left(e^{i\sqrt{k}\hat{\theta}_{q}} + e^{-i\sqrt{k}\hat{\theta}_{q}} \right) }^{2\cos{\hat{\theta}_{q}}} 
+   \left( \frac{(\partial_{x} \hat{\Phi}_{0}  )^2}{4k} + \frac{(\partial_{x} \hat{\Phi}_{r})}{\sqrt{k}}[\frac{\bar{\rho}_{0}}{2}+\frac{3}{4}] + \frac{(\partial_{x} \hat{\Phi}_{0})}{\sqrt{k}} \frac{\bar{\rho}_{0}}{2}  + \frac{(\partial_{x} \hat{\Phi}_{0}\partial_{x} \hat{\Phi}_{-1}   +   \partial_{x} \hat{\Phi}_{0}\partial_{x} \hat{\Phi}_{1})}{2k} +\frac{(\partial_{x} \hat{\Phi}_{1}\partial_{x} \hat{\Phi}_{-1})}{3k} 
+   \right) +      \overbrace{\left(e^{i\sqrt{k}\hat{\theta}_{q}} \right) }^{\cos{\hat{\theta}_{q}} + i\sin{\hat{\theta}_{q}}} \left( -\frac{3}{4}\frac{(\partial_{x} \hat{\Phi}_{1} + \partial_{x} \hat{\Phi}_{-1})}{\sqrt{k}} \right)  \Bigg]
+\end{equation*}
+
+
+
+\begin{equation} %Actualizar - Colocar este resultado cómo el límite
+    \hat{H}_{SPC} = \int dx \left( \frac{1}{K} \partial_{x}\hat{\vec{\Phi}}_{\sigma}^\top
+                    \begin{pmatrix}
+                    \frac{13 g_2 + 2 g_0}{12} & \frac{g_2}{2} & \frac{g_2+2g_0}{6} \\
+                    \frac{g_2}{2} & \frac{4g_2 +  g_0}{4} & \frac{g_2}{2} \\
+                    \frac{g_2+2g_0}{6}& \frac{g_2}{2}& \frac{13 g_2 + 2 g_0}{12} 
+            \end{pmatrix}  \partial_{x}\hat{\vec{\Phi}}_\sigma  + \frac{\partial_{x} \hat{\Phi}_{0}}{\sqrt{k}} \left( -\frac{g_{2}}{2} \right) + \frac{\partial_{x} \hat{\Phi}_{1}+ \partial_{x} \hat{\Phi}_{-1}}{\sqrt{k}} \left( -\frac{3g_{2}}{4} \right) \right) 
+\end{equation}
+\newpage
+La siguiente relación:
+\begin{align*}
+& \hat{\Phi}_{s}=\frac{1}{\sqrt{2}}\left(\hat{\Phi}_{1}-\hat{\Phi}_{-1}\right) \\
+& \hat{\Phi}_{q}=\frac{1}{\sqrt{6}}\left(\hat{\Phi}_{1}+\hat{\Phi}_{-1}-2 \hat{\Phi}_{0}\right)  \\
+& \hat{\Phi}_{c}=\frac{1}{\sqrt{3}}\left(\hat{\Phi}_{1}+\hat{\Phi}_{-1}+\hat{\Phi}_{0}\right)
+\end{align*}
+
+Nos lleva a tener la siguieten matrix de transformación:
+
+
+\begin{equation}
+    \begin{pmatrix}
+\partial_{x} \hat{\Phi}_{s} \\
+\partial_{x} \hat{\Phi}_{q} \\
+\partial_{x} \hat{\Phi}_{c}
+\end{pmatrix} = \underbrace{\begin{pmatrix}
+b_{11} & b_{12} & b_{13} \\
+b_{21} & b_{22} & b_{23} \\
+b_{31} & b_{32} & b_{33}
+\end{pmatrix}}_{\mathbf{\hat{\Pi}}}   \begin{pmatrix}
+\partial_{x} \hat{\Phi}_{1} \\
+\partial_{x} \hat{\Phi}_{0} \\
+\partial_{x} \hat{\Phi}_{-1}
+\end{pmatrix}
+\end{equation}
+
+Podemos obtener:
+
+
+\begin{equation}
+    \begin{pmatrix}
+\partial_{x} \hat{\Phi}_{1} \\
+\partial_{x} \hat{\Phi}_{0} \\
+\partial_{x} \hat{\Phi}_{-1}
+\end{pmatrix} = \underbrace{\begin{pmatrix}
+b_{11} & b_{12} & b_{13} \\
+b_{21} & b_{22} & b_{23} \\
+b_{31} & b_{32} & b_{33}
+\end{pmatrix}}_{\mathbf{\Pi}^{-1}}   \begin{pmatrix}
+\partial_{x} \hat{\Phi}_{s} \\
+\partial_{x} \hat{\Phi}_{q} \\
+\partial_{x} \hat{\Phi}_{c}
+\end{pmatrix}
+\end{equation}
+Lo que significa que podemos ir de una base a otra base Sin ningun inconveniente. Así, podemos aplicar lo siguiente:
+
+\begin{align}
+    \hat{H}_{I}=& \partial_{x} \vec{\hat{\Phi}}_{\hat{S}_{z}}^{\dagger}  (\mathbb{M}) \partial_{x} \vec{\hat{\Phi}}_{\hat{S}_{z}}  \\
+   \hat{H}_{I}  =& \partial_{x} \vec{\hat{\Phi}}_{\hat{S}_{z}}^{\dagger} \underbrace{}_{\hat{1}=\mathbf{\hat{\Pi}}^{\dagger}\mathbf{\hat{\Pi}}} (\mathbb{M}) \overbrace{}^{\hat{1}=\mathbf{\hat{\Pi}}^{\dagger}\mathbf{\hat{\Pi}}} \partial_{x} \vec{\hat{\Phi}}_{\hat{S}_{z}} \\
+   \hat{H}_{I}  =&   \underbrace{\partial_{x} \vec{\hat{\Phi}}_{\hat{S}_{z}}^{\dagger} \hat{\Pi}^{\dagger}
+ }_{\partial_{x} \vec{\hat{\Phi}}_{sqc}^{\dagger}} \quad \underbrace{ \hat{\Pi} \mathbb{M} \hat{\Pi}^{\dagger}}_{\mathbb{M}_{sqc}} \quad \underbrace{\hat{\Pi} \partial_{x} \vec{\hat{\Phi}}_{\hat{S}_{z}}} _{\partial_{x} \vec{\hat{\Phi}}_{sqc}} \\
+   \hat{H}_{I}  =&  \partial_{x} \vec{\hat{\Phi}}_{sqc}^{\dagger} \mathbb{M}_{sqc} \partial_{x} \vec{\hat{\Phi}}_{sqc}
+\end{align}
+
+Llevando entonces a tener lo siquiente:
+\begin{equation}
+     \partial_{x} \vec{\hat{\Phi}}_{sqc}^{\dagger}  = \begin{pmatrix}
+\partial_{x} \hat{\Phi}_{s} \\
+\partial_{x} \hat{\Phi}_{q} \\
+\partial_{x} \hat{\Phi}_{c}
+\end{pmatrix} 
+\end{equation}
+Además de:
+
+\begin{equation}
+     \partial_{x} \vec{\hat{\Phi}}_{sqc}^{}  = \begin{pmatrix}
+\partial_{x} \hat{\Phi}_{s} & \partial_{x} \hat{\Phi}_{q} & \partial_{x} \hat{\Phi}_{c}
+\end{pmatrix} 
+\end{equation}
+
+Y por último, obteniendo la siguiente matrix:
+
+\begin{equation}
+    \mathbb{M}_{sqc} = \begin{pmatrix}
+                   \frac{a-2\textcolor{myred}{d}+f}{2} & \frac{a-f-2\textcolor{myblue}{b}+2\textcolor{myblue}{e}}{2\sqrt{3}} & \frac{a+\textcolor{myblue}{b}-\textcolor{myblue}{e}-f}{\sqrt{6}} \\
+                    \frac{a-f-2\textcolor{myblue}{b}+2\textcolor{myblue}{e}}{2\sqrt{3}} & \frac{a+2\textcolor{myred}{d}-4\textcolor{myblue}{b}-4\textcolor{myblue}{e}+4\textcolor{mygreen}{c}+f}{6} & \frac{a+2\textcolor{myred}{d}+f-\textcolor{myblue}{b}-2\textcolor{mygreen}{c}-\textcolor{myblue}{e}}{2\sqrt{3}} \\
+                    \frac{a+\textcolor{myblue}{b}-\textcolor{myblue}{e}-f}{\sqrt{6}} & \frac{a+2\textcolor{myred}{d}+f-\textcolor{myblue}{b}-2\textcolor{mygreen}{c}-\textcolor{myblue}{e}}{2\sqrt{3}} & \frac{a+2\textcolor{myblue}{b}+2\textcolor{myred}{d}+\textcolor{mygreen}{c}+2\textcolor{myblue}{e}+f}{3} 
+            \end{pmatrix}
+\end{equation}
+Donde,
+\begin{align*}
+    a &= \frac{g_2(9+4\beta^2) +2g_0 \beta^2}{12} \\
+    f &= \frac{g_2(9+4\alpha^2) +2g_0 \alpha^2}{12}\\
+    \textcolor{mygreen}{c} &= \textcolor{mygreen}{ \frac{g_2(6-2\gamma +3\eta)+g_0(2\gamma+3)}{12}} \\
+    \textcolor{myblue}{b} &= \textcolor{myblue}{ \frac{g_2(3-\alpha)+g_0}{6}} \\
+    \textcolor{myblue}{e} &= \textcolor{myblue}{ \frac{g_2(3-\beta)+g_0}{6} } \\
+    \textcolor{myred}{d} &= \textcolor{myred}{ \frac{g_2(2-\gamma^{-1} +g_0(4+\gamma^{-1}))}{12}}
+\end{align*}
+Recordando además que:
+\begin{align*}
+    \alpha &= \sqrt{\frac{\bar{\rho}_1}{\bar{\rho}_{-1}}} \\
+    \beta &=  \sqrt{\frac{\bar{\rho}_{-1}}{\bar{\rho}_1}} \\
+    \gamma &= \sqrt{\frac{\bar{\rho}_1 \bar{\rho}_{-1}}{\bar{\rho}_0^2}} \\
+    \eta &= \frac{\bar{\rho}_0}{\bar{\rho}_1} + \frac{\bar{\rho}_0}{\bar{\rho}_{-1}} \\
+\end{align*}
+
+
+Eso lleva a que podamos escribir el Hamiltoniano de manera completa así:
+
+\begin{equation}
+    \hat{H} = \int dx \left(     \frac{1}{k} \partial_x  \hat{\vec{\Phi}}_{sqc}^{\dagger}  \mathbb{M}_{sqc}  \partial_x  \hat{\vec{\Phi}}_{sqc} + \frac{\sqrt{6} \partial_x \hat{\Phi}_{q}}{\sqrt{K}} \textcolor{mygreen}{H} + atk\hat{\Pi}_{sqc}^{2}  \right)
+\end{equation}
+
+Donde la información improtante se encuentra en:
+
+\begin{equation}
+    \textcolor{mygreen}{H} = \frac{1}{12}  (g_0-g_2) - \frac{\gamma}{36}  (g_0-g_2) + \frac{(\beta + \alpha)}{12} (g_2-g_0)   
+\end{equation}
+
+Porque tiene las conidciones en las cuales el campo magmetico lineal de Zeeman y el potencial químico se cancelan. Hay que recalcar que H toma ese valor para cuando el campo magnetico y el potencial químico tienen el siguiente valor:
+
+\begin{equation}
+    B= \frac{5\alpha}{12} (g_2-g_0) - \frac{5\beta}{12}  (g_2-g_0)
+\end{equation}
+
+\begin{equation}
+    \mu = \frac{\gamma}{36}  (g_0-g_2) -\frac{3}{4}  (g_2-g_0) 
+\end{equation}
+
+
+Sin embargo, también se pueden dejar explicitos esos parámetros, lo que quiere indicar que se ontendría el siguiente hamiltoniano:
+
+\begin{equation}
+    \hat{H} = \int dx \left(     \frac{1}{k} \partial_x  \hat{\vec{\Phi}}_{sqc}^{\dagger}  \mathbb{M}_{sqc}  \partial_x  \hat{\vec{\Phi}}_{sqc} + atk\hat{\Pi}_{sqc}^{2} + \frac{\sqrt{2} \partial_x \hat{\Phi}_{s}}{\sqrt{K}} \textcolor{myblue}{I}  - \frac{\sqrt{3} \partial_x \hat{\Phi}_{c}}{\sqrt{K}} \textcolor{myred}{J}  + \frac{\sqrt{6} \partial_x \hat{\Phi}_{q}}{\sqrt{K}} \textcolor{mygreen}{H}   \right)
+\end{equation}
+
+Dejando de manera explicita el valor del potencial químico y del campo magnético de Zeeman. Sin realizar ninguna consideración y manteniendo toda la información posible de nuestro sistema.
+\begin{equation}
+    \textcolor{myblue}{I} = \mathbf{B} +  \frac{5\beta}{12}  (g_2-g_0) - \frac{5\alpha}{12} (g_2-g_0) 
+\end{equation}
+
+\begin{equation}
+    \textcolor{myred}{J} = \mathbf{\mu} - \frac{\gamma}{36}  (g_0-g_2) + \frac{3}{4}  (g_2-g_0)
+\end{equation}
+
+\begin{equation}
+    \textcolor{mygreen}{H} = \frac{1}{12}  (g_0-g_2) - \frac{\gamma}{36}  (g_0-g_2) + \frac{(\beta + \alpha)}{12} (g_2-g_0)   
+\end{equation}

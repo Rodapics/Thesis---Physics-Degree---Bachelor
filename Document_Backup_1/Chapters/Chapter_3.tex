@@ -1,0 +1,407 @@
+\chapter{Bose Hubbard Model (BHM)}
+%%%%-----------------TEXTO:CAMBIARLO---------
+The Bose-Hubbard model, a cornerstone in understanding many-body quantum systems, has profound applications in studying ultracold atoms in optical lattices. The connection between optical lattices and the Bose-Hubbard Hamiltonian provides insights into strongly correlated systems, especially when extended to spin-1 systems. This paper explores the relationship between these concepts in detail. \\ \\
+\textcolor{myred}{Optical Lattices and Ultracold Atoms} \\ \\
+Optical lattices are periodic potential structures formed by the interference of counter-propagating laser beams. These lattices create a periodic array of potential wells where ultracold atoms, typically bosons or fermions, can be trapped. These systems are tunable, allowing experimental control over key parameters such as lattice depth, atomic interactions, and hopping amplitude. This flexibility makes optical lattices ideal for simulating quantum many-body systems.
+
+The dynamics of atoms in an optical lattice can be described by various models depending on the type of atoms and the interaction strengths. For bosonic atoms, the Bose-Hubbard model becomes particularly relevant as it captures the competition between kinetic energy and interactions, leading to a rich phase diagram including superfluid and Mott insulator phases. \\ \\
+\textcolor{myred}{Bose-Hubbard Hamiltonian: Overview} \\ \\
+The Bose-Hubbard Hamiltonian is commonly written as:
+
+\begin{equation}
+\hat{H} = -t \sum_{\langle i,j \rangle} (\hat{a}_i^\dagger \hat{a}_j + \hat{a}_j^\dagger \hat{a}_i) + \frac{U}{2} \sum_i \hat{n}_i (\hat{n}_i - 1) + \sum_i \epsilon_i \hat{n}_i
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $t$ represents the hopping parameter between adjacent lattice sites,
+    \item $\hat{a}_i^\dagger$ and $\hat{a}_i$ are the creation and annihilation operators for bosons at site $i$,
+    \item $U$ denotes the on-site interaction energy,
+    \item $\hat{n}_i$ is the number operator for site $i$,
+    \item $\epsilon_i$ represents the local energy offset at site $i$.
+\end{itemize}
+
+This model effectively captures the physics of ultracold bosonic atoms in an optical lattice, allowing for the study of quantum phase transitions like the superfluid-to-Mott insulator transition. \\ \\
+\textcolor{myred}{Spin-1 Systems and the Extended Bose-Hubbard Model}\\ \\
+
+
+In a spin-1 system, the Bose-Hubbard model becomes more complex as the atoms can occupy multiple spin states, introducing additional degrees of freedom. The spin-1 variant of the Bose-Hubbard model incorporates spin-exchange interactions and can be written as:
+
+\begin{equation}
+\hat{H} = -t \sum_{\langle i,j \rangle} \sum_{m_s} (\hat{a}_{i,m_s}^\dagger \hat{a}_{j,m_s} + h.c.) + \frac{U_0}{2} \sum_{i} \hat{n}_i (\hat{n}_i - 1) + \frac{U_2}{2} \sum_i \left( \vec{S}_i^2 - 2 \hat{n}_i \right)
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $U_0$ is the spin-independent interaction term,
+    \item $U_2$ is the spin-dependent interaction term,
+    \item $\vec{S}_i$ represents the total spin operator at site $i$,
+    \item $\hat{a}_{i,m_s}$ denotes the annihilation operator for a boson with spin $m_s$ at site $i$.
+\end{itemize}
+
+This Hamiltonian describes the interplay between on-site interactions, hopping between lattice sites, and spin-dependent interactions. In the case of spin-1 bosons such as Sodium-23 or Rubidium-87 atoms, spin-dependent interactions lead to phenomena like spin nematicity, spinor condensates, and magnetization dynamics.\\ \\
+\textcolor{myred}{Phases of Spin-1 Bose-Hubbard Model}\\ \\
+%\subsection{Mott Insulator Phase}
+In the Mott insulator phase, each lattice site is filled with a fixed number of atoms due to strong on-site interactions. For spin-1 atoms, this phase exhibits different magnetic orderings depending on the interaction strengths $U_0$ and $U_2$. The ground state can be either ferromagnetic (aligned spins) or anti-ferromagnetic (opposite spins) based on the sign of the spin-exchange term.
+
+%\subsection{Superfluid Phase}
+
+In the superfluid phase, atoms are delocalized across the lattice, and long-range coherence is established. The spinor nature of the atoms introduces additional complexity in this phase, where spin-mixing dynamics and magnetization properties play crucial roles.
+
+%\subsection{Spinor Condensates}
+
+Spin-1 systems can also form spinor Bose-Einstein condensates (BECs), which exhibit macroscopic quantum phenomena. Depending on the interaction parameters, these condensates can show polar, ferromagnetic, or nematic phases, characterized by different spin alignments.\\ \\
+\textcolor{myred}{Experimental Realizations}\\ \\
+Experiments with ultracold atoms in optical lattices have successfully implemented the Bose-Hubbard model for both scalar and spinor systems. Spin-1 atoms such as Rubidium-87 (Rb-87) or Sodium-23 (Na-23) are commonly used to explore spinor physics. By adjusting the lattice depth, interaction strength, and external magnetic fields, researchers have observed quantum phase transitions and spin-ordering phenomena in these systems.
+
+One notable example is the observation of a Mott insulator phase with spin-1 bosons in a three-dimensional optical lattice, where researchers could probe spin correlations and spin-dependent dynamics using advanced techniques like quantum gas microscopy.\\ \\
+\textcolor{myred}{Theoretical Extensions and Applications}
+The spin-1 Bose-Hubbard model serves as a foundation for exploring more exotic quantum phenomena. The interplay of spin and particle interactions leads to a variety of interesting phases, including:
+\begin{itemize}
+    \item \textbf{Spin-Nematic Phases:} These phases lack magnetic order but possess a quadrupolar order, leading to unique properties in spinor systems.
+    \item \textbf{Magnetization Dynamics:} The spin-1 system allows the study of magnetization and spin-mixing dynamics, which are essential for understanding magnetic ordering in quantum systems.
+\end{itemize}
+
+The model also provides a framework for exploring quantum magnetism in optical lattices, where spin-dependent interactions can be tuned to mimic magnetic systems with controlled parameters. \\ \\
+\textcolor{myred}{Conclusiones}\\
+%\section{Conclusion}
+The relationship between optical lattices and the spin-1 Bose-Hubbard Hamiltonian opens up rich avenues for exploring quantum many-body systems, spinor condensates, and quantum magnetism. Optical lattices provide a highly controllable experimental platform, while the spin-1 Bose-Hubbard model captures the essential physics of interacting spinor bosons. The study of these systems is crucial for understanding complex quantum phenomena such as superfluidity, magnetism, and quantum phase transitions.
+
+%\section*{References}
+
+\begin{enumerate}
+    \item Bloch, I., Dalibard, J., \& Zwerger, W. (2008). Many-body physics with ultracold gases. \textit{Reviews of Modern Physics}, 80(3), 885-964.
+    \item Lewenstein, M., Sanpera, A., Ahufinger, V. (2012). \textit{Ultracold Atoms in Optical Lattices: Simulating Quantum Many-Body Systems}. Oxford University Press.
+    \item Greiner, M., Mandel, O., Esslinger, T., Hänsch, T. W., \& Bloch, I. (2002). Quantum phase transition from a superfluid to a Mott insulator in a gas of ultracold atoms. \textit{Nature}, 415(6867), 39-44.
+    \item Demler, E., \& Zhou, F. (2002). Spinor Bosonic Atoms in Optical Lattices: Symmetry Breaking and Fractionalization. \textit{Physical Review Letters}, 88(16), 163001.
+    \item Auerbach, A. (1998). \textit{Interacting Electrons and Quantum Magnetism}. Springer.
+\end{enumerate}
+%%%%------------------------------%%%
+\newpage
+\section{Bosonization.}
+Recobrando la información esencial de la mini introducción, es que nuestro Hamiltonino, al estar bajo la influencia de un potencial químico y campo de zeman lineal se puede ver de la siguiente manera:
+\begin{equation}
+    \hat{H}=\overbrace{-t \sum_{\langle i, j\rangle, \sigma}\left(\hat{b}_{i, \sigma}^{\dagger} \hat{b}_{j, \sigma}+\text { h.c. }\right)}^{\text {Hopping}} \underbrace{+\hat{H}_I}_{\text {Interaction}} \overbrace{-\mu \sum_i \hat{n}_{i, \sigma}}^{\text {Chemical Potential }}+\overbrace{q \sum_{i, \sigma} \sigma \hat{n}_{i, \sigma}}^{\text {Zeeman Field}} \text{,}
+\end{equation}
+donde el termino de interacción tiene la siguiente forma:
+\footnotesize 
+\begin{align}
+    \hat{H}_{I} = &\sum_i \Bigg[ \underbrace{\frac{g_2}{2} \left( \hat{b}_{1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{1}^{} \hat{b}_{1}^{} 
+    + \hat{b}_{-1}^{\dagger}\hat{b}_{-1}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{-1}^{} 
+    + 2\hat{b}_{1}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{0}^{}  
+    + 2\hat{b}_{-1}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{0}^{} \right) 
+    + \frac{2g_{2} + g_{0}}{6} \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{}+\frac{g_{2} + 2g_{0}}{3} + 2\hat{b}_{1}^{\dagger}\hat{b}_{-1}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{1}^{} }_{\text {Spin Preserving Collision}}  \nonumber \\
+ +&\underbrace{\frac{g_{2}-g_{0}}{3} \left( \hat{b}_{-1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{} + \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{-1}^{}\right)}_{\text {Spin Changing Collision}} 
+    \Bigg]_{i}.
+\end{align}
+\normalsize
+Antes de iniciar el proceso de bosonización es importante identificar dos cosas. La primera es ver que tenemos operadores de creación y destrucción para cada proyección mágnetica de spin de las partículas. Este comportamiento nos da indiciones que podemos llegar a tener una identidad de bosonización diferente para cada una de estas proyecciones mágneticas. Sin embargo, tiene algún sentido físico pensar que el sistema se comporta así? Veamos que este sí es el caso, al realizar una transformada de Fourier a todo nuestro Hamiltonian \eqref{} exeptuando el termino de interacción:
+\begin{equation}
+    \hat{H}=\overbrace{-t \sum_{\langle i, j\rangle, \sigma}\left(\hat{b}_{i, \sigma}^{\dagger} \hat{b}_{j, \sigma}+\text { h.c. }\right)}^{\text {Hopping}}  \overbrace{-\mu \sum_i \hat{n}_{i, \sigma}}^{\text {Chemical Potential }}+\overbrace{q \sum_{i, \sigma} \sigma \hat{n}_{i, \sigma}}^{\text {Zeeman Field}} \text{,}
+\end{equation}
+aplicamos la siguiente transformada de fourier a nuestro sistema:
+\begin{equation}
+    \hat{b_j} = \frac{1}{\sqrt{L}} \sum_{k=1}^{n} e^{-2\pi i jk/n}  \hat{b}_{k} \quad \quad \hat{b_j}^{\dagger} = \frac{1}{\sqrt{L}} \sum_{k=1}^{n} e^{2\pi i jk/n} \hat{b}_{k}^{\dagger}
+\end{equation}
+donde $\hat{b_j}$ y $\hat{b_j}^{\dagger}$ son operadores de construcción y destrucción en el espacio de momento [Organizar esto, estamos pasando de espacio a momento.]. Volviendo a la equación \eqref{}, vemos que se puede descomponer en dos partes, una que contiene la información del termino de salto y otra que contiene tanto la información del potencial químico como del campo lineal de Zeeman:
+\begin{equation}
+    \hat{H}=\overbrace{-t \sum_{\langle i, j\rangle, \sigma}\left(\hat{b}_{i, \sigma}^{\dagger} \hat{b}_{j, \sigma}+\text { h.c. }\right)}^{\text {Hopping}}  \overbrace{-\mu \sum_i \hat{n}_{i, \sigma}}^{\text {Chemical Potential }}+\overbrace{q \sum_{i, \sigma} \sigma \hat{n}_{i, \sigma}}^{\text {Zeeman Field}} \text{,}
+\end{equation}
+Así, aplicando la trnasformadad de Fouierdad dada por la equación \eqref{} a la eqcuación \eqref{} se obtiene para el primer termino:
+
+
+
+\begin{align}
+     \hat{H} = -t \sum_{<i,j>} \left( \hat{b}_{i,\sigma}^{\dagger}\hat{b}_{j,\sigma}^{} + \hat{b}_{j,\sigma}^{\dagger} \hat{b}_{i,\sigma}^{} \right) \\
+     = \sum_asdas = otro por poner = \sum_{k} \left( -2t \cos{(\frac{2\pi}{L} k)} + (B \sigma - \mu) \right) \hat{b}_{k,\sigma}^{\dagger} \hat{b}_{k,\sigma}^{}  \\
+      sss
+\end{align}
+A su vez, realizando la 
+
+
+ \begin{align}
+    \hat{H} = \sum_{k} \left( -2t \cos{(\frac{2\pi}{L} k)} + (B - \mu) \right) \hat{b}_{k,1}^{\dagger} \hat{b}_{k,1}^{} \nonumber \\
+    +\sum_{k} \left( -2t \cos{(\frac{2\pi}{L} k)}  - \mu \right) \hat{b}_{k,0}^{\dagger} \hat{b}_{k,0}^{} \\
+    + \sum_{k} \left( -2t \cos{(\frac{2\pi}{L} k)} - (B + \mu) \right) \hat{b}_{k,-1}^{\dagger} \hat{b}_{k,-1}^{}   \nonumber
+ \end{align}
+Vemos que se obtiene de manera explícita una relación cosenoidal para cada uno de los operadores de creación y destrucción según su proyección magnetica. Se observa que algunos partículas son beneficiadas o perjudicadas en terminos energeticos con la presencia de un campo magnético. Esto es
+
+
+
+Al graficar las diferentes proyecciones magnéticas, observamos que podemos realzar un proceso de bosonización en cada una de ellas [Fig Tal] [Fig 3: 1: Una sola proyección magnetica, 2: Las tres, 4: Esquema de los niveles de energía.]\\ \\
+
+Lo que verdaderamente cambia dentro el proceso formal de la bosonización que hemos descrito en el capítulo anterior es la ecuación \eqref{} que habla de las densidades medias, vemos que ahora no se tiene una única densidad media para todas las partículas, sino, que esta depende de la proyección magnética de las partículas. Es claro que las densidades medias de las proyecciones magnéticas difieren entre si en presencia de un campo magnético lineal externo. Esto nos lleva a concluir, colocando la información mencionada en la \eqref{} que la identidad de bosonización toma la siguiente forma:
+\begin{align}
+    \hat{\rho} = \bar{\rho}_{0} + \frac{\partial_{x} \hat{\Phi}_{\sigma}}{\sqrt{k}} \\
+    \hat{b}_{\sigma}^{\dagger} (x) = \sqrt{ \bar{\rho}_{0} + \frac{\partial_{x} \hat{\Phi}_{\sigma}}{\sqrt{k}}} e^{i \sqrt{k} \hat{\theta_{\sigma}}} \\
+    \hat{b}_{\sigma}^{} (x) = e^{-i \sqrt{k} \hat{\theta_{\sigma}}} \sqrt{ \bar{\rho}_{0} + \frac{\partial_{x} \hat{\Phi}_{\sigma}}{\sqrt{k}}} 
+\end{align}
+Colocando esta información en términos de colores y siendo congruentes con la ecuación \eqref{} se tiene que:
+
+
+\begin{equation}
+\begin{aligned}
+    \textcolor{mygreen}{\hat{\rho}_{1} = \bar{\rho}_{1} + \frac{\partial_{x} \hat{\Phi}_{1}}{\sqrt{k}}} \quad \quad & \textcolor{mygreen}{\hat{b}_{1}^{\dagger} (x) = \sqrt{ \bar{\rho}_{1} + \frac{\partial_{x} \hat{\Phi}_{1}}{\sqrt{k}}} e^{i \sqrt{k} \hat{\theta_{1}}}} \quad \quad & \textcolor{mygreen}{\hat{b}_{1}^{} (x) = e^{-i \sqrt{k} \hat{\theta_{1}}} \sqrt{ \bar{\rho}_{1} + \frac{\partial_{x} \hat{\Phi}_{1}}{\sqrt{k}}} } \quad 
+\end{aligned}
+\end{equation}
+
+
+\begin{equation}
+\begin{aligned}
+    \textcolor{myblue}{\hat{\rho}_{0} = \bar{\rho}_{0} + \frac{\partial_{x} \hat{\Phi}_{0}}{\sqrt{k}}} \quad \quad & \textcolor{myblue}{\hat{b}_{0}^{\dagger} (x) = \sqrt{ \bar{\rho}_{0} + \frac{\partial_{x} \hat{\Phi}_{0}}{\sqrt{k}}} e^{i \sqrt{k} \hat{\theta_{0}}}} \quad \quad & \textcolor{myblue}{\hat{b}_{0}^{} (x) = e^{-i \sqrt{k} \hat{\theta_{0}}} \sqrt{ \bar{\rho}_{0} + \frac{\partial_{x} \hat{\Phi}_{0}}{\sqrt{k}}} } \quad 
+\end{aligned}
+\end{equation}
+
+\footnotesize
+\begin{equation}
+\begin{aligned}
+    \textcolor{myred}{\hat{\rho}_{-1} = \bar{\rho}_{-1} + \frac{\partial_{x} \hat{\Phi}_{-1}}{\sqrt{k}}} \quad \quad &  \textcolor{myred}{\hat{b}_{-1}^{\dagger} (x) = \sqrt{ \bar{\rho}_{-1} + \frac{\partial_{x} \hat{\Phi}_{-1}}{\sqrt{k}}} e^{i \sqrt{k} \hat{\theta_{-1}}}} \quad \quad  & \textcolor{myred}{\hat{b}_{-1}^{} (x) = e^{-i \sqrt{k} \hat{\theta_{-1}}} \sqrt{ \bar{\rho}_{-1} + \frac{\partial_{x} \hat{\Phi}_{-1}}{\sqrt{k}}} } 
+\end{aligned}
+\end{equation}\\ \\
+\normalsize
+La segunda cosa que es importante identificar se refiere a la ecuación \eqref{} que nos indica el hamiltoniano de interacción, donde cada uno de los terminos se puede escribir de una manera general y conveniente para el proceso de bosonización:
+\footnotesize 
+\begin{align}
+    \hat{H}_{I} = &\sum_i \Bigg[ \underbrace{\frac{g_2}{2} \left( \hat{b}_{1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{1}^{} \hat{b}_{1}^{} 
+    + \hat{b}_{-1}^{\dagger}\hat{b}_{-1}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{-1}^{} 
+    + 2\hat{b}_{1}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{0}^{}  
+    + 2\hat{b}_{-1}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{0}^{} \right) 
+    + \frac{2g_{2} + g_{0}}{6} \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{}+\frac{g_{2} + 2g_{0}}{3} + 2\hat{b}_{1}^{\dagger}\hat{b}_{-1}^{\dagger} \hat{b}_{-1}^{} \hat{b}_{1}^{} }_{\text {Spin Preserving Collision}}  \nonumber \\
+ +&\underbrace{\frac{g_{2}-g_{0}}{3} \left( \hat{b}_{-1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{} + \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{-1}^{}\right)}_{\text {Spin Changing Collision}} 
+    \Bigg]_{i}.
+\end{align}
+\normalsize
+Vemos que el proceso de bosonización del termino de interacción se encuentra completado al bosonizar los terminos $ 1$, $2$, $3$ y $4$.
+
+Ahora estamos listos para iniciar el proceso de bosonización de nuestro hamiltoniano de estudio. Para ello, tenemos presente las relaciones dadas  en la \eqref{}, las relaciones de conmutación que se encuentran en \eqref{} y la aproximación a primer orden mostrada en \eqref{}. Primero realizaremos la bosonización del hamiltoniano \eqref{} iniciando por los terminos que no pertenecer a la interacción:
+\subsection{Bosonization: Kinetic term:}
+Enfocandonos en este termino que es de la forma 
+\begin{equation}
+\hat{H} = -t \sum_{<i,j>} \left( \hat{b}_{i,\sigma}^{\dagger}\hat{b}_{j,\sigma}^{} + \hat{b}_{j,\sigma}^{\dagger} \hat{b}_{i,\sigma}^{} \right)
+\end{equation}
+Al aplicar el proceso de bosonización obtenemos:
+\begin{align}    \hat{b}_{i,\sigma}^{\dagger}\hat{b}_{j,\sigma}^{} = &\sqrt{\bar{\rho_{\sigma}}} \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{\sigma} \sqrt{k}} \right) e^{i \sqrt{k} \hat{\theta_{\sigma}}} \sqrt{\bar{\rho_{\sigma}}} e^{-i \sqrt{k} \hat{\theta_{\sigma}}} \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{\sigma} \sqrt{k}} \right) \\
+    &=\bar{\rho_{\sigma}} \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{\sigma} \sqrt{k}} \right) e^{-i\sqrt{k} (\hat{\theta}_{\sigma}(x+a) - \hat{\theta}_{\sigma} (x))} \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{\sigma} \sqrt{k}} \right)\\
+    &=\bar{\rho_{\sigma}} \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{\sigma} \sqrt{k}} \right) e^{-i\sqrt{k}a \partial_{x}\hat{\theta}_{\sigma}}\left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{\sigma} \sqrt{k}} \right)\\
+    &= \left( \bar{\rho_{\sigma}}+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2 \sqrt{k}} \right) e^{-i\sqrt{k}a \partial_{x}\hat{\theta}_{\sigma}}\left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{\sigma} \sqrt{k}} \right) \\
+    &=\left( \bar{\rho_{\sigma}}+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2 \sqrt{k}} \right) \left( 1-i\sqrt{k}a \hat{\Phi} - \frac{ka^2 \hat{\Phi}^2}{2} \right) \left( 1+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2\bar{\rho}_{\sigma} \sqrt{k}} \right) \\
+    &= \left( \bar{\rho_{\sigma}}+\frac{\partial_{x} \hat{\Phi}_{\sigma}} {2 \sqrt{k}} \right) \left( ... \right)
+\end{align}
+DE manera analoga se realiza el calculo de $\hat{b}_{j,\sigma}^{\dagger} \hat{b}_{i,\sigma}^{} $, lo que lleva como resultado a:
+\begin{equation}
+    \hat{H} = -t \sum_{<i,j>} \left( \hat{b}_{i,\sigma}^{\dagger}\hat{b}_{j,\sigma}^{} + \hat{b}_{j,\sigma}^{\dagger} \hat{b}_{i,\sigma}^{} \right) =  \sum_{\sigma} -2t \hat{\rho}_{\sigma} (x) + t \bar{\rho}_{\sigma} k a^{2} \hat{\Phi}^{2} - t \frac{(\partial_{x} \hat{\Phi}_{\sigma} )^2}{2 \bar{\rho}_{\sigma} k}
+\end{equation}
+Lo que quiere decir que es igual a:
+\begin{equation}
+       \hat{H} = -t \sum_{<i,j>} \left( \hat{b}_{i,\sigma}^{\dagger}\hat{b}_{j,\sigma}^{} + \hat{b}_{j,\sigma}^{\dagger} \hat{b}_{i,\sigma}^{} \right) =\sum_{\sigma} t   \int  dx\left(\bar{\rho}_{\sigma} k a^{2} \hat{\Pi}^{2} - t \frac{(\partial_{x} \hat{\Phi}_{\sigma} )^2}{2 \bar{\rho}_{\sigma} k}  \right)
+\end{equation}
+Vemos que este término se puede escribir de manera matricial de la siguiente forma:\\ 
+%[ESCRIBIR FORMA MATRICIAL]
+
+
+
+\subsection{bosonization: Chemical Potential and Linear Magnetic Field} \textbf{Bosonization of the Zeeman/Chemical term}
+Falta añadir el proceso pero:
+\begin{equation}
+    \hat{H}_{B,\mu}= \overbrace{-\mu \sum_i \hat{n}_{i, \sigma}}^{\text {Potencial químico }}+\underbrace{q \sum_{i, \sigma} \sigma \hat{n}_{i, \sigma}}_{\text {Campo de Zeeman}}
+\end{equation}
+\begin{equation}
+    \hat{H}_{B,\mu}=\int dx \left( -\mu \frac{\sqrt{3} \partial_{x}\hat{\Phi}_c}{\sqrt{k}}  + B \frac{\sqrt{2} \partial_{x}\hat{\Phi}_s}{\sqrt{k}} \right)
+\end{equation}
+
+
+
+
+\subsection{bosonization of the interacction term}
+\subsubsection{Interaction Term: Spin Preserving Collisions.}
+
+
+\subsubsection{Interaction Term: Spin Changing Collisions.}
+
+\section{Still working on the Hamiltonian - Transformations - Changing of Basis.}
+
+\section{Bosonzation: Specific case$\bar{\rho_{0}} = \bar{\rho_{1}} = \bar{\rho}_{-1}$.}
+\subsection{Phases - Decoupling}
+\subsection{High simetry points.}
+
+\section{Comments - Another Section.}
+
+
+
+
+
+
+\newpage
+ 
+%\section{Bosonization of BHM}
+
+
+\begin{enumerate}
+
+
+
+    \item \textbf{Bosonization of the Spin Changing Collision:}
+
+\begin{equation}
+     \hat{H}_{SCC} = \sum_{i} \Bigg[ \frac{g_{2}-g_{0}}{3} \left( \hat{b}_{-1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{} + \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{-1}^{}\right)
+    \Bigg]_{i}
+\end{equation}
+
+
+\begin{equation}
+    \hat{H}_{SCC} = \frac{g_{2}-g_{0}}{3} \left( \hat{b}_{-1}^{\dagger}\hat{b}_{1}^{\dagger} \hat{b}_{0}^{} \hat{b}_{0}^{} + \hat{b}_{0}^{\dagger}\hat{b}_{0}^{\dagger} \hat{b}_{1}^{} \hat{b}_{-1}^{} \right) = \int dx \frac{g_{2}-g_{0}}{3}\Bigg[
+    \overbrace{\left(e^{i\sqrt{k}\hat{\theta}_{q}} + e^{-i\sqrt{k}\hat{\theta}_{q}} \right) }^{2\cos{\hat{\theta}_{q}}} 
+   \left( \frac{(\partial_{x} \hat{\Phi}_{0}  )^2}{4k} + \frac{(\partial_{x} \hat{\Phi}_{r})}{\sqrt{k}}[\frac{\bar{\rho}_{0}}{2}+\frac{3}{4}] + \frac{(\partial_{x} \hat{\Phi}_{0})}{\sqrt{k}} \frac{\bar{\rho}_{0}}{2}  + \frac{(\partial_{x} \hat{\Phi}_{0}\partial_{x} \hat{\Phi}_{-1}   +   \partial_{x} \hat{\Phi}_{0}\partial_{x} \hat{\Phi}_{1})}{2k} +\frac{(\partial_{x} \hat{\Phi}_{1}\partial_{x} \hat{\Phi}_{-1})}{3k} 
+   \right) +      \overbrace{\left(e^{i\sqrt{k}\hat{\theta}_{q}} \right) }^{\cos{\hat{\theta}_{q}} + i\sin{\hat{\theta}_{q}}} \left( -\frac{3}{4}\frac{(\partial_{x} \hat{\Phi}_{1} + \partial_{x} \hat{\Phi}_{-1})}{\sqrt{k}} \right)  \Bigg]
+\end{equation}
+
+\begin{equation}
+    \overbrace{\left(e^{i\sqrt{k}\hat{\theta}_{q}} \right) }^{\cos{\hat{\theta}_{q}} + i\sin{\hat{\theta}_{q}}} \left( -\frac{3}{4}\frac{(\partial_{x} \hat{\Phi}_{1} + \partial_{x} \hat{\Phi}_{-1})}{\sqrt{k}} \right) 
+\end{equation}
+
+    \item \textbf{Bosonization of the Spin Preserving Collision:}
+\begin{equation}
+    \hat{H}_{SPC} = \int dx \left( \frac{1}{K} \partial_{x}\hat{\vec{\Phi}}_{\sigma}^\top
+                    \begin{pmatrix}
+                    \frac{13 g_2 + 2 g_0}{12} & \frac{g_2}{2} & \frac{g_2+2g_0}{6} \\
+                    \frac{g_2}{2} & \frac{4g_2 +  g_0}{4} & \frac{g_2}{2} \\
+                    \frac{g_2+2g_0}{6}& \frac{g_2}{2}& \frac{13 g_2 + 2 g_0}{12} 
+            \end{pmatrix}  \partial_{x}\hat{\vec{\Phi}}_\sigma  + \frac{\partial_{x} \hat{\Phi}_{0}}{\sqrt{k}} \left( -\frac{g_{2}}{2} \right) + \frac{\partial_{x} \hat{\Phi}_{1}+ \partial_{x} \hat{\Phi}_{-1}}{\sqrt{k}} \left( -\frac{3g_{2}}{4} \right) \right) 
+\end{equation}
+
+
+
+    \item \textbf{Bosonization TOTAL }
+\begin{equation}
+    \hat{H} = \frac{1}{K} \partial_{x}\hat{\vec{\Phi}}_{\sigma}^\top
+                    \begin{pmatrix}
+                    \frac{13 g_2 + 2 g_0}{12} - \frac{t}{2\bar{\rho}_{0}}   & \frac{2g_2 + g_0}{6} & \frac{g_2+5g_0}{12} \\
+                    \frac{2g_2 + g_0}{6} & \frac{10g_2 + 5 g_0}{12} - \frac{t}{2\bar{\rho}_{0}}   & \frac{2g_2 + g_0}{6} \\
+                    \frac{g_2+5g_0}{12}& \frac{2g_2 + g_0}{6}& \frac{13 g_2 + 2 g_0}{12} - \frac{t}{2\bar{\rho}_{0}}   
+            \end{pmatrix}  \partial_{x}\hat{\vec{\Phi}}_\sigma  -\mu \frac{\sqrt{3} \hat{\Phi}_c}{\sqrt{k}}  + B \frac{\sqrt{2}\hat{\Phi}_s}{\sqrt{k}}
+\end{equation}
+
+
+\begin{equation}
+    \hat{H} = \int dx \left( \frac{1}{K} \partial_{x}\hat{\vec{\Phi}} (\hat{\Phi}_{s},\hat{\Phi}_{q},\hat{\Phi}_{c})^\top
+                    \begin{pmatrix}
+                    \frac{1}{4}\left(-g_{0}+4g_{2} - 2 \frac{t}{\bar{\rho}_{0}}\right)  & 0 & 0 \\
+                    0 & \frac{1}{4}\left(g_{0}+4g_{2} - 2 \frac{t}{\bar{\rho}_{0}}\right)  & 0\\
+                    0& 0& \frac{1}{4}\left( g_{0}+2g_{2} - 2 \frac{t}{\bar{\rho}_{0}}\right)
+                \end{pmatrix}  \partial_{x}\hat{\vec{\Phi}} \begin{pmatrix}
+                    \hat{\Phi}_{s} \\
+                    \hat{\Phi}_{q} \\
+                    \hat{\Phi}_{c}
+                \end{pmatrix} \right)
+\end{equation}
+A continuación hay que crear las ecuaciones que nos faltan, antes de actualizar las existentes.
+\begin{equation}
+    \hat{H}_{s} = \int dx \left( \frac{1}{K} \frac{(-g_{0}+4g_{2} - 2 \frac{t}{\bar{\rho}_{0}})}{4} \right) (\partial_{x}\hat{\Phi}_c)^{2}    +t a^2 \bar{\rho}_{0} \int dx \hat{\Pi_{c}^{2}}
+\end{equation}
+
+\begin{equation}
+    k_{s} = \sqrt{\frac{(-g_{0} +4g_{2}-t/\bar{\rho}_{0})}{4ta^2 \bar{\rho}_{0}}}
+\end{equation}
+
+\begin{equation}
+    \hat{H}_{q} = \int dx \left( \frac{1}{K} \frac{(g_{0}+4g_{2} - 2 \frac{t}{\bar{\rho}_{0}})}{4} \right) (\partial_{x}\hat{\Phi}_c)^{2}    +t a^2 \bar{\rho}_{0} \int dx \hat{\Pi_{c}^{2}}
+\end{equation}
+
+\begin{equation}
+    k_{q} = \sqrt{\frac{(g_{0} +4g_{2}-t/\bar{\rho}_{0})}{4ta^2 \bar{\rho}_{0}}}
+\end{equation}
+
+
+\begin{equation}
+    \hat{H}_{c} = \int dx \left( \frac{1}{K} \frac{(3g_{0}+6g_{2} - 2 \frac{t}{\bar{\rho}_{0}})}{4} \right) (\partial_{x}\hat{\Phi}_c)^{2}    +t a^2 \bar{\rho}_{0} \int dx \hat{\Pi_{c}^{2}}
+\end{equation}
+
+\begin{equation}
+    k_{c} = \sqrt{\frac{(6g_{0} +6g_{2}-t/\bar{\rho}_{0})}{4ta^2 \bar{\rho}_{0}}}
+\end{equation}
+
+
+\end{enumerate}
+
+\section{\textbf{Bosonizacion termino de interacción DIFERENTES - Construcción Matriz}}
+
+
+
+\section{\textbf{Bosonizacion termino de interacción - Construcción Matriz}}
+Para esto debemos calcular la bosonización de cada uno de estos terminos, en el casgo que $p_0=p_1=P-1$
+\begin{itemize}
+    \item 
+\end{itemize}
+Teniendo por fin como resultado:
+\begin{align}
+    asdasd
+\end{align}
+Lo que por último permite tener:
+
+
+\section{Uniendo todo lo de bosonización}
+Calculando todo con la matriz esa, uniendo info, descomponiendo en campos, y hallando los $k$ para cada caso tenemos que:
+
+\begin{equation}
+    \hat{H}_{I} = \int dx \left( \frac{1}{K} \partial_{x}\hat{\vec{\Phi}}_{\sigma}^\top
+                    \begin{pmatrix}
+                    \frac{13 g_2 + 2 g_0}{12} & \frac{2g_2 + g_0}{6} & \frac{g_2+5g_0}{12} \\
+                    \frac{2g_2 + g_0}{6} & \frac{10g_2 + 5 g_0}{12} & \frac{2g_2 + g_0}{6} \\
+                    \frac{g_2+5g_0}{12}& \frac{2g_2 + g_0}{6}& \frac{13 g_2 + 2 g_0}{12} 
+            \end{pmatrix}  \partial_{x}\hat{\vec{\Phi}}_\sigma =
+             \frac{1}{K} \partial_{x}\hat{\vec{\Phi}} (\hat{\Phi}_{s},\hat{\Phi}_{q},\hat{\Phi}_{c})^\top
+                    \begin{pmatrix}
+                    \frac{1}{4}\left(-g_{0}+4g_{2}\right)  & 0 & 0 \\
+                    0 & \frac{1}{4}\left(g_{0}+4g_{2}\right)  & 0\\
+                    0& 0& \frac{1}{4}\left( g_{0}+2g_{2}\right)
+            \end{pmatrix}  \partial_{x}\hat{\vec{\Phi}}(\hat{\Phi}_{s},\hat{\Phi}_{q},\hat{\Phi}_{c}) \right)
+\end{equation}
+
+
+\begin{align*}
+& \hat{\Phi}_{s}=\frac{1}{\sqrt{2}}\left(\hat{\Phi}_{1}-\hat{\Phi}_{-1}\right) \\
+& \hat{\Phi}_{q}=\frac{1}{\sqrt{6}}\left(\hat{\Phi}_{1}+\hat{\Phi}_{-1}-2 \hat{\Phi}_{0}\right)  \\
+& \hat{\Phi}_{c}=\frac{1}{\sqrt{3}}\left(\hat{\Phi}_{1}+\hat{\Phi}_{-1}+\hat{\Phi}_{0}\right)
+\end{align*}
+
+
+
+\begin{align*}
+& \lambda_{s}=\frac{1}{4}\left(-g_{0}+4g_{2}\right) \\
+& \lambda_{q}=\frac{1}{4}\left(g_{0}+4g_{2}\right)  \\
+& \lambda_{c}=\frac{1}{4}\left( g_{0}+2g_{2}\right)
+\end{align*}
+
+
+
+
+
+\newpage
+
+Table \ref{table_summary_bosonization} below shows a brief bosonization dictionary, it summarized the main ingredients of the bosonization used here.
+
+\begin{table}[h!]
+  \captionsetup{justification=raggedright, singlelinecheck=false}
+  \renewcommand{\arraystretch}{1.5} % Cambia el factor de interlineado a 1.5
+  \caption{Bosonization Dictionary. The principals equations and definitions.}
+  \begin{tabularx}{\textwidth}{l C r}
+    \hline\hline
+    Bosonic Behaviour: & $\left[ \hat{b}_{k \eta}^{\dagger} , \hat{b_{k^{\prime} \eta^\prime}} \right] = \delta_{kk^{\prime}} \delta_{\eta \eta^\prime}   \quad \eta = 1,...,M,$ &  \eqref{eq_prerequisites_1} \\
+    Momentum Quantization: & $k = \frac{2\pi}{L} n_k \quad n_k \in \mathbb{N} $ & \eqref{eq_prerequisites_2} \\
+    Momentum Quantization: & $\hat{H}_0 = \sum_k \frac{k^2}{2m} \hat{a}^{\dagger}(k) \hat{a}(k)$ & \eqref{eq_hamiltonian_free_bosons} \\
+    Dispersion relation: &     $\epsilon(k) \approx \epsilon_{E} \pm\left(k \mp k_{E}\right) v_{E}$
+ & \eqref{eq_dispersion_relation} \\
+    Chirial system: &    $    \hat{a}(k)=\theta(k) \hat{\varphi}_{R}(k)+\theta(-k) \hat{\varphi}_{L}(k) $ & \eqref{eq_a_momentum_operator} \\
+    Momentun: &    $        \begin{aligned}
+            k_{E}+p_{R}, &\quad \text { if } k>0 \\
+            -k_{E}+p_{L}, &\quad \text { if } k<0
+        \end{aligned} $ & \eqref{eq_momentum_each_branch} \\
+    Fourier operators: & $        \hat{a}(x)  =\frac{1}{\sqrt{L}} \sum_{k} e^{i k x} \hat{a}(k),
+ $ & \eqref{eq_fuorier_definition_q} \\
+    Fourier chirial field: & $\hat{\varphi}_{\alpha}(x)=\frac{1}{\sqrt{L}} \sum_{p} e^{i p x} \hat{\varphi}_{\alpha}(p)$ & \eqref{eq_fouerier_chrial_fields} \\
+    : &    $ $ & \eqref{eq_dispersion_relation} \\
+    
+    \hline\hline
+  \end{tabularx} \label{table_summary_bosonization}
+\end{table}
+

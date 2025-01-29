@@ -1,0 +1,97 @@
+\chapter{Bose- Hubbard Model (BHM)}
+In this appendix we are going to review the Bose-Hubbard Model in a more profound way. We start from its original statement in the solid state theory. Following with the disscution about spin-1 physics, how we bosonize those terms in a very long way and finally having auxiliar calulations used in the text.
+
+\section{Theory.} \label{App_B_Theory}
+Consider a system of particles under de influence of a static and periodic potential, such as $V(x)=V(x+R)$, where $R$ is consider a vector of the lattice. We define as Bloch functions those that allow us to describe the system inside the Brillouin zone, those functions are of the form:
+\begin{equation}
+    \phi(\boldsymbol{x})=u_{\boldsymbol{k}}(\boldsymbol{x}) \exp (i \boldsymbol{k} \cdot \boldsymbol{x}) 
+\end{equation}
+where the function $u_{\boldsymbol{k}}(\boldsymbol{x})$ has the information about the periodicity of the lattice with $u_{\boldsymbol{k}}(x) = u_{\boldsymbol{k}} (\boldsymbol{x+R}) $, and $k$ belong to the Brillouin zone.\\ \\
+Once we have defined the Bloch functions, we are able to define the Wannier functions as its Fourier transformation:
+\begin{equation} \label{wannier}
+    W_j(x)=\frac{1}{\sqrt{L}} \sum_k e^{\frac{i j k R}{\hbar}} \phi_k(x) \quad \text { where } \quad \int d x W_i^*(x) W_j(x)=\delta_{i j} \text {,}
+\end{equation}
+it is important to notice that those functions satisfied the following relation:
+\begin{equation}
+\begin{aligned} \label{wannier2}
+&\braket{W_n (\boldsymbol{x}-\boldsymbol{R}_i) | W_m (\boldsymbol{x}-\boldsymbol{R}_j)} \\
+&= \frac{1}{N} \sum_{\boldsymbol{k}_1, \boldsymbol{k}_2} \exp \left[ i \left( \boldsymbol{R}_i \cdot \boldsymbol{k}_1 - \boldsymbol{R}_j \cdot \boldsymbol{k}_2 \right) \right] \cdot \underbrace{ \braket{\phi_{n k_1} | \phi_{m k_2}} }_{\delta_{n m} \delta_{k_1 k_2}} \\
+&= \delta_{n m} \delta_{i j} \text{.}
+\end{aligned}
+\end{equation}
+Showing that the Wannier functions are a complete orhonormal set of wave functions, where each function is strongly localized in each site of the lattice. The importance of the completness of the Wannier functions relies on the exactly and precise description of a systen of boson on an optical lattice. \\ \\
+The BHM captures the essence of the physics of an interactuan particles in a lattice, this is a very good model for the description of the dynamics 
+
+
+ 
+
+
+\section{Spin-1 Physics.}
+
+
+\section{Bosonization.}
+\begin{comment}
+Considere un sistema de partículas bajo la influencia de un potencial estático y periódico, por ejemplo, de la forma $V(x)=V(x+R)$, siendo $R$ un vector de la red. Se definen como funciones de Bloch aquellas funciones que permiten describir el sistema dentro de la zona de Brillouin, analíticamente se definen de la forma $\phi(\boldsymbol{x})=u_{\boldsymbol{k}}(\boldsymbol{x}) \exp (i \boldsymbol{k} \cdot \boldsymbol{x}) $ donde $u_{\boldsymbol{k}}(\boldsymbol{x})$ tiene la periodicidad de la red con $u_{\boldsymbol{k}}(x) = u_{\boldsymbol{k}} (\boldsymbol{x+R}) $ y $\boldsymbol{k}$ pertenece a la zona de Brillouin \cite{book:17644_Kittel}.\\ \\
+Una vez definidas las funciones de onda de Bloch, se pueden definir las funciones de Wannier como la transformada de Fourier de las funciones de onda de Bloch,
+\begin{equation} \label{wannier}
+    W_j(x)=\frac{1}{\sqrt{L}} \sum_k e^{\frac{i j k R}{\hbar}} \phi_k(x) \quad \text { junto a } \quad \int d x W_i^*(x) W_j(x)=\delta_{i j} \text {,}
+\end{equation}
+a su vez satisfacen,
+\end{comment}
+
+
+
+
+
+\small
+\begin{equation}
+\begin{aligned} \label{wannier2}
+\braket{W_n (\boldsymbol{x}-\boldsymbol{R}_i) | W_m (\boldsymbol{x}-\boldsymbol{R}_j)} = &  \frac{1}{N}  \sum_{\boldsymbol{k}_1, \boldsymbol{k}_2} \exp \left[ i \left(\boldsymbol{R}_i \cdot \boldsymbol{k}_1-\boldsymbol{R}_j \cdot \boldsymbol{k}_2 \right)   \right] \cdot \underbrace{  \braket{\phi_{n k_1} | \phi_{m k_2}}     }_{\text {$\delta_{n m} \delta_{k_1 k_2}$. }} \\
+ = & \delta_{n m} \delta_{i j}\text {,}
+\end{aligned}
+\end{equation}
+mostrando así que, las funciones de Wannier constituyen un conjunto completo de funciones de onda ortonormales, donde cada función es fuertemente localizada en cada sitio de la red. La importancia de la completez de las funciones de Wannier radica en que permiten describir de manera precisa y simplificada un sistema de bosones en redes ópticas.\\ \\
+El modelo de Bose-Hubbard captura la física de las partículas interactuantes en una red, siendo un modelo para describir partículas bosónicas interactuantes sin espín y ultrafrías en un potencial periódico unidimensional \cite{Art_Phase_1D_Bosse_Hubbard_Model}. Este es el modelo mínimo de los sistemas de muchas partículas que no permite una reducción en un modelo de una sola partícula. \\ \\
+Para ello, el hamiltoniano en primera cuantización la $i$-ésima partícula queda expresado de la forma \cite{Art_QUantum_Cell_Model_Boson_Bose_HUbbard}:
+\begin{equation}
+    H_i = -\frac{\hbar^2}{2m} \nabla_i^2 + V cos(x) + U \delta(x-x_i)\text {,}
+\end{equation}
+donde $U=\frac{4 \pi \hbar^2 a_s}{m}$ es la intensidad de interacción del pseudo potencial, con $a_s$ la longitud de dispersión de onda-s. \\ \\
+Desde el formalismo de la segunda cuantización se reescribe el hamiltoniano utilizando los operadores de campo que se definen a través del uso de las funciones de Wannier \eqref{wannier} de la siguiente manera,
+\begin{equation}
+\hat{\Psi}^{\dagger}(x)=\sum_i W_i^*(x) \hat{b}_i^{\dagger} \quad \text { y } \quad \hat{\Psi}(x)=\sum_i W_i(x) \hat{b}_i\text {.}
+\end{equation}
+El hamiltoniano de muchas partículas en segunda cuantización es el modelo de Bose-Hubbard el cual se expresa como,
+\begin{equation}
+    \hat{H}=-t \sum_{\langle i, j\rangle}\left(\hat{b}_i^{\dagger} \hat{b}_j+\text { h.c. }\right)-\mu \sum_i \hat{n}_i+\frac{U}{2} \sum_i \hat{n}_i\left(\hat{n}_i-1\right) \text {,}
+\end{equation}
+donde
+\begin{equation}
+    t=\int d x W_i^*(x)\left(-\frac{\hbar^2 \nabla^2}{2 m}+V(x)\right) W_j(x) text {,}
+\end{equation}
+y 
+\begin{equation}
+    U=g \int d x|W(x)|^4 \text {,}
+\end{equation}
+donde los operadores de construcción y destrucción mantienen la estadística bosónica del sistema. \\ \\
+    %La inclusión del grado de libertad de espín se refleja en el término de interacción a través del número cuántico $\sigma_i$ y del operador de proyección $\hat{P_S}$ \cite{Thesis_Diego}. En este contexto, el término del hamiltoniano dado por la ecuación  (\ref{eqn_BS_SC})  queda reescrito de la siguiente manera
+%%\begin{equation} \label{eqn_BS_SC}
+    %\hat{H}_I=\frac{1}{2} \sum_{i, S,\{\sigma\}}\left\{\int d x d x^{\prime} \hat{\Psi}_{\sigma_4}^{\dagger}(x) %\hat{\Psi}_{\sigma_3}^{\dagger}\left(x^{\prime}\right) V_{\sigma_1, %\sigma_2, \sigma_3, \sigma_4}^S %\hat{\Psi}_{\sigma_2}\left(x^{\prime}\right) \hat{\Psi}_{\sigma_1}%(x)\right\}_i  \text{,}
+%%\end{equation}
+%donde el elemento  se define a través del operador potencial de contacto
+%\begin{equation}
+%    \hat{V}^S=g_S \delta\left(x-x^{\prime}\right) \hat{P}_S
+%\end{equation}
+%lo que con lleva a que el termino de interaccion se convierta
+Adicionalmente, incluyendo el grado de libertad de espín el potencial de interacción se ve modificado y la aplicación de un campo de Zeeman externo permite reescribir de manera completa el hamiltoniano del sistema de estudio,
+i,$\sigma$
+donde $q$ indica la intensidad del campo magnético aplicado y $\hat{n}_{i, \sigma}$ es el operador número, $\sigma$ las proyecciones magnéticas del sistema espinorial y el hamiltoniano de interacción $\hat{H_I}$, toma la forma,
+\begin{equation}
+\hat{H}_I=\frac{1}{2} \sum_{S,\{\sigma\}} \int d x d x^{\prime} \hat{\Psi}_{\sigma_4}^{\dagger}(x) \hat{\Psi}_{\sigma_3}^{\dagger}\left(x^{\prime}\right) V_{\sigma_1, \sigma_2, \sigma_3, \sigma_4}^S \hat{\Psi}_{\sigma_2}\left(x^{\prime}\right) \hat{\Psi}_{\sigma_1}(x) \text{.}
+\end{equation}
+Donde el elemento matricial $ V_{\sigma_1, \sigma_2, \sigma_3, \sigma_4}^S$ se define a través del siguiente potencial de contacto:
+\begin{equation}
+    \hat{V}^{S} = g_s \delta (x-x^\prime) \hat{P}_S,
+\end{equation}
+siendo la magnitud de interacción del canal $S$ dada por la constante $g_S=4\pi\hbar^2 a_S /m $, donde $a_S$ es la longitud de onda s dispersada de cada cana, y el operador proyector $\hat{P}_S=|S, M\rangle\langle M, S|$ para cada subespacio de espín total $S$.
+\section{Fourier Transformation.}

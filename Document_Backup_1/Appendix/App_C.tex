@@ -1,0 +1,130 @@
+\chapter{Correlations - Theory - Calculations}
+A continuacion colcaremos la siguiente información:
+\begin{itemize}
+    \item Teoría de las correlaciones. Tesis de Bedoya y TRL de un libro.
+    \item Parte de las correlaciones dadas en el Giarmachi.
+    \item  Calculo de las integrales según la teis de Felipe, Modelo XXZ.
+    \item Recrear un calculo de una componenete de matriz del documento de Fajardo.
+    \item Calcular mis correlaciones.
+\end{itemize}
+\section{Theory - Correlaciones Tesis Bedoya.}
+La información de las fases que puede presentar nuestro sistema de estudio, en especial un sistema unidimensional puede ser obtener a través de los productos de operadores de creación y destrucción  del estilo $\langle \hat{a}^{\dagger} \hat{a} ..... \rangle$. La bosonización nos ha indicado que estas correlaciones se encuentran en terminos de los campos canonicos de la teoría. \\ \\
+\begin{equation}
+    \hat{H} = \int  dx \left ( \frac{1}{K} \partial_{x} \vec{\hat{\Phi}}_{sqc}^{\dagger} \mathbb{M}_{sqc} \partial_{x} \vec{\hat{\Phi}}_{sqc}   + \frac{\sqrt{6} \textcolor{mygreen}{H}}{\sqrt{K}} \partial_x \hat{\Phi}_{q} + atK \hat{\Pi}_{scq}^{2} \right)
+\end{equation}\\ \\
+\textcolor{myred}{Qué sucede con el campo magnético?}\\ \\
+Primero debemos definir como se definir los operadores con los cuales estamos trabajando. Cómo los define Bedoya para su sistema:
+$$
+\begin{aligned}
+\hat{\rho}(x) & =\hat{\psi}_{\uparrow}^{\dagger}(x) \hat{\psi}_{\uparrow}(x)+\hat{\psi}_{\downarrow}^{\dagger}(x) \hat{\psi}_{\downarrow}(x) \\
+\hat{\sigma}^z(x) & =\hat{\psi}_{\uparrow}^{\dagger}(x) \hat{\psi}_{\uparrow}(x)-\hat{\psi}_{\downarrow}^{\dagger}(x) \hat{\psi}_{\downarrow}(x) \\
+\hat{\sigma}^x(x) & =\hat{\psi}_{\uparrow}^{\dagger}(x) \hat{\psi}_{\downarrow}(x)+\hat{\psi}_{\downarrow}^{\dagger}(x) \hat{\psi}_{\uparrow}(x) \\
+\hat{\sigma}^y(x) & =i\left(\hat{\psi}_{\downarrow}^{\dagger}(x) \hat{\psi}_{\uparrow}(x)-\hat{\psi}_{\uparrow}^{\dagger}(x) \hat{\psi}_{\downarrow}(x)\right) \\
+\hat{O}_{S S}(x) & =\hat{\psi}_{R \uparrow}^{\dagger}(x) \hat{\psi}_{L \downarrow}^{\dagger}(x)-\hat{\psi}_{L \uparrow}^{\dagger}(x) \hat{\psi}_{R \downarrow}^{\dagger}(x) \\
+\hat{O}_{T S}^z(x) & =\hat{\psi}_{R \uparrow}^{\dagger}(x) \hat{\psi}_{L \downarrow}^{\dagger}(x)+\hat{\psi}_{L \uparrow}^{\dagger}(x) \hat{\psi}_{R \downarrow}^{\dagger}(x) \\
+\hat{O}_{T S}^x(x) & =\hat{\psi}_{R \uparrow}^{\dagger}(x) \hat{\psi}_{L \uparrow}^{\dagger}(x)+\hat{\psi}_{L \downarrow}^{\dagger}(x) \hat{\psi}_{R \downarrow}^{\dagger}(x) \\
+\hat{O}_{T S}^y(x) & =i\left(\hat{\psi}_{L \downarrow}^{\dagger}(x) \hat{\psi}_{R \downarrow}^{\dagger}(x)-\hat{\psi}_{R \uparrow}^{\dagger}(x) \hat{\psi}_{L \uparrow}^{\dagger}(x)\right)
+\end{aligned}
+$$
+Vemos que este es para el caso de fermiones $1/2$. Sin embargo, para el caso de bosones de espin entero, se deberían definir de la siguiente manera:
+\begin{align*}
+\hat{\rho}(x) &= \hat{\psi}_{1}^{\dagger}(x) \hat{\psi}_{1}(x) + \hat{\psi}_{0}^{\dagger}(x) \hat{\psi}_{0}(x) + \hat{\psi}_{-1}^{\dagger}(x) \hat{\psi}_{-1}(x)
+\end{align*}
+Los operadores de espín, que corresponden a las componentes \(x\), \(y\), y \(z\) del vector de espín \(\vec{\hat{S}}(x)\), están definidos como:
+\begin{align*}
+\hat{S}^z(x) &= \hat{\psi}_{1}^{\dagger}(x) \hat{\psi}_{1}(x) - \hat{\psi}_{-1}^{\dagger}(x) \hat{\psi}_{-1}(x)
+\\
+\hat{S}^x(x) &= \frac{1}{\sqrt{2}} \left( \hat{\psi}_{1}^{\dagger}(x) \hat{\psi}_{0}(x) + \hat{\psi}_{0}^{\dagger}(x) \hat{\psi}_{1}(x) + \hat{\psi}_{0}^{\dagger}(x) \hat{\psi}_{-1}(x) + \hat{\psi}_{-1}^{\dagger}(x) \hat{\psi}_{0}(x) \right)
+\\
+\hat{S}^y(x) &= \frac{i}{\sqrt{2}} \left( \hat{\psi}_{-1}^{\dagger}(x) \hat{\psi}_{0}(x) - \hat{\psi}_{0}^{\dagger}(x) \hat{\psi}_{-1}(x) + \hat{\psi}_{1}^{\dagger}(x) \hat{\psi}_{0}(x) - \hat{\psi}_{0}^{\dagger}(x) \hat{\psi}_{1}(x) \right)
+\end{align*}
+Los operadores singlete y triplete se definen como:
+\begin{align*}
+\hat{O}_{SS}(x) &= \hat{\psi}_{1}^{\dagger}(x) \hat{\psi}_{-1}^{\dagger}(x) - \hat{\psi}_{-1}^{\dagger}(x) \hat{\psi}_{1}^{\dagger}(x)
+\\
+\hat{O}_{TS}^z(x) &= \hat{\psi}_{1}^{\dagger}(x) \hat{\psi}_{-1}^{\dagger}(x) + \hat{\psi}_{-1}^{\dagger}(x) \hat{\psi}_{1}^{\dagger}(x)
+\\
+\hat{O}_{TS}^x(x) &= \hat{\psi}_{1}^{\dagger}(x) \hat{\psi}_{1}^{\dagger}(x) + \hat{\psi}_{-1}^{\dagger}(x) \hat{\psi}_{-1}^{\dagger}(x)
+\\
+\hat{O}_{TS}^y(x) &= i \left( \hat{\psi}_{-1}^{\dagger}(x) \hat{\psi}_{1}^{\dagger}(x) - \hat{\psi}_{1}^{\dagger}(x) \hat{\psi}_{-1}^{\dagger}(x) \right)
+\end{align*} \\ \\
+
+
+
+
+\textcolor{myred}{Qué sucede con la quirialidad del sistema?}
+
+
+\newpage
+\section{Theory - Correlaciones. Book.}
+A cotninuación se introduce la teoría de respuesta lineal (LRT) que nos da un framework general para poder estudiar la dinámica de un sistema de muchos cuerpos que se encuentran cercas al equilibrio térmico.\\ \\
+Estos procesos dinámicos son debidos a perturbaciones external o fluctuaciones espontaneas, incluso estos dos procesos se encuentra interrelacionados.
+\subsection{Teoría de Respuesta Lineal.}
+En un experimento, se crea una perturbación debido a un campo externo en la vecindad de un punto $\vec{r}$ en un tiempo $t$. Así, la idea es medir \textbf{la respuesta del sistema} en algún otro punto $\vec{r}^{\prime}$ en un tiempo después $t^{\prime} \geq t$. Por ahora, dejaremos aún lado la \textbf{dependencia temporal}.\\ \\
+Para iniciar, consideramos un sistema que se encuentra isolado y descrito por el Hamiltoniano, $\hat{H}_{0}$, añadimos un termino de interacción, $\hat{V}$, debido a un camo externo,
+\begin{equation}
+    \hat{H}= \hat{H}_{0} + \hat{V} (t),
+\end{equation}
+\textbf{confimaos nuetro formalismo} dentro del límite \textbf{debil} de la perturbación y la respuesta del sistema en la aproximación líneal, de ahí viene el nombre de la teoría. En esta aproximación, la matriz densidad del sistema está dada por:
+\begin{equation}
+    \hat{\rho} (t) = \bar{\rho} + \delta \rho (t)
+\end{equation}
+donde $\bar{\rho}$ es la matrix densidad del sistema del sistema sin perturbar que se encuentra dada por:
+\begin{equation}
+    \bar{\rho} = e^{-\beta/Z} \quad \quad \text{donde} \quad \quad Z = traza \left( e^{-\beta \hat{H}_{0}}\right)
+\end{equation}
+Suponemos que el campo externo es encendido de manera gradual iniciando en el punto a $t= - \infty$ y escribimos $V(t)e^{\eta t} $ siendo $\eta$ una cantidad pequeña positiva. \textbf{No escribiremos el termino $e^{\eta t}$, pero no podemos ignorar que existe} y que es posible que lo recobremos cuando sea necesario. Cualquier efecto segundario y no querido en el sistema puede ser eliminado tomando el límite $\eta \longrightarrow 0^{+}$. Hemos seleccionado también que $\hat{\rho} (t=-\infty) = \bar{\rho}$. A su vez, suponemos que el \textbf{sistema se encuetnra en equilibrio} antes de que el campo externo sea aplicado. La ecuación de movimiento para el operador $\hat{\rho}$ es 
+\begin{equation}
+    i \frac{\partial \hat{\rho} (t)}{\partial t} = \big[ \hat{H},\hat{\rho}(t)  \big] =  \big[ \hat{H}_{0},\hat{\rho}(t)  \big] + \big[ \hat{V}(t),\hat{\rho}(t)  \big],
+\end{equation}
+siendo $\hbar = 1$. En el contexto de la \textbf{teoría de respuesta líneal} despreciamos las contribuciones de los terminos de $\hat{V} \delta \hat{\rho}$ y podemos escribir:
+\begin{equation}
+    i \Delta \dot{\hat{\rho}}(t) = \big[ \hat{H}_{0}, \Delta \hat{\rho}(t)  \big] +\big[ \hat{V}(t),\hat{\rho}_{0}  \big],
+\end{equation}
+
+
+
+
+
+
+\newpage
+\subsection{A Simple Example.}
+Para ilustrar el formalismo que hemos mencionado, consideremos el hamiltoniano de la siguiente forma:
+\begin{equation}
+    \hat{H} = \sum_q \omega_q \hat{a}_{q}^{\dagger} \hat{a}_{q},
+\end{equation}
+donde la dependencia temporal se encuentra dada en la imagen de Heisenber, donde lo operadores evolucionan de la siguiente manera:
+\begin{equation}
+    \hat{a}_{q}(t) = \hat{a}_{q} e^{-i\omega_q t} ,\quad \quad \hat{a}_{q}^{\dagger}(t) = \hat{a}_{q}^{\dagger} e^{i\omega_q t},
+\end{equation}
+Supongamos que queremos tratar un operador definido de la siguiente manera
+\begin{equation}
+    \hat{A}_{q} = \hat{a}_{q}^{\dagger} + \hat{a}_{q},
+\end{equation}
+Se aprecia de manera directa que $\hat{A}_{q}^{\dagger} = \hat{A}_{q}$ por lo que este operador $\hat{A}_{q}$ es hermitico. Usamos la siguiente información:
+\begin{equation}
+    \langle \hat{a}_{q} \hat{a}_{q} \rangle =0 \quad \quad   \langle \hat{a}_{q}^{\dagger} \hat{a}_{q}^{\dagger} \rangle =0,
+\end{equation}
+la \textbf{Función de correlación $S(t)$} puede escribirse de la siguiente manera:
+\begin{equation}
+    S(t) =  \langle \hat{A}_{q} (t) \hat{A}_{q}  \rangle =   \langle \hat{a}_{q}^{\dagger} (t) \hat{a}_{q} \rangle  +  \langle \hat{a}_{q} (t) \hat{a}_{q} ^{\dagger} \rangle,
+\end{equation}
+lo que lleva a terner lo siguiente:
+\begin{equation}
+    S(t) = e^{i\omega_{q} t} \langle \hat{a}_{q}^{\dagger} \hat{a}_{q} \rangle  + e^{-i\omega_{q} t} \langle \hat{a}_{q}  \hat{a}_{q} ^{\dagger}  \rangle   = \hat{n}_{q} e^{i\omega_{q} t} + \left( 1+ \hat{n}_{q} \right) e^{-i\omega_{q} t} .
+\end{equation}
+Ahora, introducimos la transformada de Fourier de la ecuación previa:
+\begin{equation}
+    S(\omega) = \int_{-\infty}^{\infty} e^{i\omega t} S(t) dt = \int_{-\infty}^{\infty} \left(  \hat{n}_{q} e^{i\omega_{q} t} + \left( 1+ \hat{n}_{q} \right) e^{-i\omega_{q} t}    \right) dt
+\end{equation}
+\begin{equation}
+    S(w) = \hat{n}_{q} \delta (\omega + \omega_q) + \left( 1+ \hat{n}_{q} \right) \delta (\omega - \omega_{q}).
+\end{equation}
+Sin embargo, si escribimos lo siguiente $\omega_{q} \longrightarrow \omega_{q} + i\epsilon$, la expresión anterior se convierte en lo siguiente:
+\begin{equation}
+    S(w) = \frac{\hat{n}_{q}}{\omega + \omega_q + i\epsilon } + \frac{1+\hat{n}_{q}}{\omega-\omega_q - i\epsilon}.  
+\end{equation}
+Podemos usar que $\hat{n}_{q} = \left( e^{\beta \omega_q} -1 \right)^{-1}$ obtenemos:
+\begin{equation}
+    S(w) = \frac{1}{e^{\beta \omega_q} -1} \big[ \frac{1}{\omega + \omega_q + i\epsilon } + \frac{e^{\beta \omega_q}}{\omega-\omega_q - i\epsilon}\big]
+\end{equation}
